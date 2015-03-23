@@ -1,4 +1,6 @@
 
+Schema Design
 
-![Schema Design](http://i.imgur.com/u2KjZ3W.png)
+
+http://i.imgur.com/u2KjZ3W.png
 

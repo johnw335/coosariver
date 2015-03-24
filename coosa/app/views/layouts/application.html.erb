@@ -7,8 +7,57 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <nav class="navbar navbar-default" role="navigation" id="nav_top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <a class="navbar-brand" href="#">
+              <img alt="Brand" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p50x50/314334_241119182590355_3478058_n.jpg?oh=b2da1c4795b9d5c78397647dfbf9b981&oe=5571E0E2&__gda__=1437784062_510ab7d8122c0c8bc616973ddcfc145e">
+            </a>
+            <li id="home_button"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Who We Are <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Our Fleet</a></li>
+                <li><a href="#">Our Leaders</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">What We Do <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Our Approach to Conservation</a></li>
+                <li><a href="#">Our Programs</a></li>
+              </ul>
+            </li>
+            <li id="what_button"><a href="#">Our River</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Get Involved <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Join As A Member</a></li>
+                <li><a href="#">Shop Our Store</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Volunteer</a></li>
+              </ul>
+            </li>
+            <li id="what_button"><a href="#">News</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 <%= yield %>
+
+  <nav class="navbar navbar-default navbar-fixed-bottom" id="nav-foot">
+    <div class="container">
+      <p>© Coosa Riverkeeper, Inc. 2013-2014 | 205-981-6565 | info@coosariver.org | 13521 Old Hwy 280, Suite 133. Birmingham, Alabama 35242</p>
+    </div>
+  </nav>
 
 </body>
 </html>

@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   resources :locations
 
   get 'welcome/index'
+  get 'pages/about_us'
+  get 'pages/our_team'
+  get 'pages/our_fleet'
+  get 'pages/our_leaders'
 
 
 

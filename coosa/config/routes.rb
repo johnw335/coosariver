@@ -6,6 +6,15 @@ Rails.application.routes.draw do
   get 'pages/our_team'
   get 'pages/our_fleet'
   get 'pages/our_leaders'
+  get 'pages/our_approach'
+  get 'pages/our_programs'
+  get 'pages/our_river'
+  get 'pages/join_as_member'
+  get 'pages/shop'
+  get 'pages/events'
+  get 'pages/volunteer'
+  get 'pages/news'
+  get 'pages/swimguide'
 
 
 

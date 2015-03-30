@@ -18,34 +18,35 @@
             <a class="navbar-brand" href="#">
               <img alt="Brand" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p50x50/314334_241119182590355_3478058_n.jpg?oh=b2da1c4795b9d5c78397647dfbf9b981&oe=5571E0E2&__gda__=1437784062_510ab7d8122c0c8bc616973ddcfc145e">
             </a>
-            <li id="home_button"><a href="#">Home</a></li>
+            <li id="home_button"><%= link_to "Home", {:controller => 'welcome', :action => 'index'}%></l1>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Who We Are <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><%= link_to "About Us", 'pages/about_us'%></li>
-                <li><%= link_to "Our Team", 'pages/our_team'%></li>
-                <li><%= link_to "Our Fleet", 'pages/our_fleet'%></li>
-                <li><%= link_to "Our Leaders", 'pages/our_leaders'%></li>
+                <li><%= link_to "About Us", {:controller => 'pages', :action => 'about_us'}%></l1>
+                <li><%= link_to "Our Team", {:controller => 'pages', :action => 'our_team'}%></l1>
+                <li><%= link_to "Our Fleet", {:controller => 'pages', :action => 'our_fleet'}%></l1>
+                <li><%= link_to "Our Leaders", {:controller => 'pages', :action => 'our_leaders'}%></l1>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">What We Do <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Our Approach to Conservation</a></li>
-                <li><a href="#">Our Programs</a></li>
+                <li><%= link_to "Our Approach to Conservation", {:controller => 'pages', :action => 'our_approach'}%></l1>
+                <li><%= link_to "Our Programs", {:controller => 'pages', :action => 'our_programs'}%></l1>
               </ul>
             </li>
-            <li id="what_button"><a href="#">Our River</a></li>
+            <li id='what_button'><%= link_to "Our River", {:controller => 'pages', :action => 'our_river'}%></l1>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Get Involved <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Join As A Member</a></li>
-                <li><a href="#">Shop Our Store</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Volunteer</a></li>
+                <li><%= link_to "Join As a Member", {:controller => 'pages', :action => 'join_as_member'}%></l1>
+                <li><%= link_to "Shop Our Store", {:controller => 'pages', :action => 'shop'}%></l1>
+                <li><%= link_to "Events", {:controller => 'pages', :action => 'events'}%></l1>
+                <li><%= link_to "Volunteer", {:controller => 'pages', :action => 'volunteer'}%></l1>
               </ul>
             </li>
-            <li id="what_button"><a href="#">News</a></li>
+            <li id='what_button'><%= link_to "News", {:controller => 'pages', :action => 'news'}%></l1>
+            <li id='what_button'><%= link_to "Swim Guide", {:controller => 'pages', :action => 'swimguide'}%></l1>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

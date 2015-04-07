@@ -10,6 +10,8 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
+    @location = Location.find(params[:id])
+    @samples = Sample.find_by(location: @location)
   end
 
   # GET /locations/new

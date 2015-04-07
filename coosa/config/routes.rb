@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :locations
+
+  resources :locations do
+    resources :photos
+    resources :samples
+  end
 
   get 'welcome/index'
   get 'pages/about_us'

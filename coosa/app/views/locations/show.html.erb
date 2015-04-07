@@ -1,3 +1,4 @@
+<h1 class="location-index-head">Location</h1>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -11,4 +12,13 @@
 </p>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>
+<%= link_to 'Back', locations_path %> |
+
+<%= link_to 'New Sample', new_location_sample_path(location_id: @location.id)%>
+
+<h1> Samples for this location </h1>
+  <%if @samples%>
+    <%@samples.each do |sample|%>
+    <p><%=sample.name%></p>
+    <%end%>
+  <%end%>
